@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #ffc8e0;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UV-Compatible" content="ie=edge" />
+    <title>Typing speed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-dark text-white">
+
+    <header class="bg-secondary text-center p-0 mb-1">
+      <h1 style="background-color: #ffc8e0;">TYPING SPEED</h1>
+    </header>
+    <div class="container text-center" style="background-color: #b8f7ff;">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <p class="lead">
+            Nhập từ đã cho trong vòng
+            <span class="text-success" id="seconds">10</span> giây:
+          </p>
+          <h2 class="display-2 mb-5" id="current-word"></h2>
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            placeholder="Nhập vào..."
+            id="word-input"
+            
+          />
+          <h4 class="mt-3" id="message"></h4>
+
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <h3>
+                Thời gian:
+                <span id="time">0</span>
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <h3>
+                Điểm:
+                <span id="score">0</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <div class="card card-bodyh bg-secondary text-white">
+                <h5>Hướng dẫn</h5>
+                <p>
+                  Nhập từng từ trong số giây nhất định để ghi điểm. Để chơi lại,
+                  chỉ cần gõ từ hiện tại. Điểm số của bạn sẽ được thiết lập lại.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
